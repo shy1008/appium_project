@@ -63,19 +63,29 @@ class MusinsaLoginTest(unittest.TestCase):
         print("test_valid_login start")
         self.navigate_to_login_page()
 
-        utils.wait_for_element(self.driver, MusinsaLoginPageLocators.login_appbar_text_xpath)
+        utils.wait_for_element(
+            self.driver, MusinsaLoginPageLocators.login_appbar_text_xpath
+        )
 
-        id_field = self.driver.find_element(*MusinsaLoginPageLocators.login_id_input_xpath)
+        id_field = self.driver.find_element(
+            *MusinsaLoginPageLocators.login_id_input_xpath
+        )
         id_field.send_keys(Credentials.ID)
 
-        pw_field = self.driver.find_element(*MusinsaLoginPageLocators.login_password_input_xpath)
+        pw_field = self.driver.find_element(
+            *MusinsaLoginPageLocators.login_password_input_xpath
+        )
         pw_field.send_keys(Credentials.PASSWORD)
 
-        login_button = self.driver.find_element(*MusinsaLoginPageLocators.login_button_xpath)
+        login_button = self.driver.find_element(
+            *MusinsaLoginPageLocators.login_button_xpath
+        )
         login_button.click()
 
-        snap_profile_text = utils.wait_for_element(self.driver, MusinsaLoginPageLocators.snap_profile_text_xpath)
-        self.assertIsNotNone(snap_profile_text)  
+        snap_profile_text = utils.wait_for_element(
+            self.driver, MusinsaLoginPageLocators.snap_profile_text_xpath
+        )
+        self.assertIsNotNone(snap_profile_text)
 
     def tearDown(self):
         print("driver end")

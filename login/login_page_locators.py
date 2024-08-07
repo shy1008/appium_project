@@ -14,6 +14,7 @@ class MusinsaLoginPageLocators:
 
     # ID
     stop_watching_button_id = (AppiumBy.ID, 'com.musinsa.store:id/text_view_stop_watching_today')
+    content_popup_id = (AppiumBy.ID, 'android:id/content')
     
     # accessibility ID
     mypage_button_id = (AppiumBy.ACCESSIBILITY_ID, '마이')  

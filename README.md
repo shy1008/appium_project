@@ -27,13 +27,27 @@
 # 폴더 구조
 
 ```bash
+- automation
+  |-- test_scenario
+  |
+- base
+  |-- base_page
+  |-- base_test
+  |
 - common
   |-- utils
-- login_page
-  |-- login_page_locators.py
-  |-- login_test.py
+  |
+- data
+  |-- test_data
+  |
+- screens
+  |- login
+  |  |-- login_page_locators
+  |  |-- login_page
+  |- my
+  |  |-- my_page
+  |
 - venv
-- credentials.py
  
 
 ```

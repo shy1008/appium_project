@@ -3,9 +3,9 @@ import sys
 sys.path.append("/Users/apple/VsProjects/appium_project")
 from common import utils
 from data.test_data import TestData
-from my.my_page import MyPage
+from screens.my.my_page import MyPage
 from base.base_test import BaseTest
-from login.login_page import LoginPage
+from screens.login.login_page import LoginPage
 from selenium.webdriver.support.ui import WebDriverWait
 
 

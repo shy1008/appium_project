@@ -19,9 +19,10 @@
 
 # 구현 결과
 
-|사용자가 유효한 계정으로 로그인 할 수 있는지 확인한다   | 
-|----------------------------------------|
-| <img src="https://velog.velcdn.com/images/hrso/post/3f1b875c-bb62-4e2c-bc11-0bc90dffd910/image.gif" width="300px">   
+
+|                                                   [test_scenario_01]<br>사용자가 유효한 계정으로 <br> 로그인 할 수 있는지 확인한다                                                    |                                               [test_scenario_02]<br>사용자가 잘못된 계정으로 <br> 로그인 할 수 없는지 확인한다                                               |                                              [test_scenario_03]<br>로그인 시도 횟수에 제한이 있는지 확인한다                                             |
+|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|
+| <img src="https://velog.velcdn.com/images/hrso/post/3f1b875c-bb62-4e2c-bc11-0bc90dffd910/image.gif" width="300px"> | <img src="https://github.com/user-attachments/assets/5624b84b-2076-449b-a0ef-333cdc794a63" width="300px"> | <img src="https://github.com/user-attachments/assets/67e9642c-75fc-4196-b365-f0aa8d4f5e7d" width="300px"> |  
 
 
 # 폴더 구조

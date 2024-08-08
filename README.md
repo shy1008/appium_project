@@ -55,7 +55,7 @@
 
 # 프로젝트 과정
 
-- <a href="https://shy1008.tistory.com/72"> [트러블슈팅] Appium 프로젝트명 변경시, 파이썬 명령어 사용불가</a>
+- <a href="https://shy1008.tistory.com/72"> [트러블슈팅] Appium 프로젝트명 변경시, 독립된 가상환경 이슈</a>
 - <a href="https://shy1008.tistory.com/73"> [트러블슈팅] Appium 드라이버 초기화 이슈</a>
 
 

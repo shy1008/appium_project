@@ -8,13 +8,14 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
 class BasePage:
     def __init__(self, driver):
         self.driver = driver
         self.timeout = 10
 
     def find_element(
-        self, locator: Tuple[str, str]
+            self, locator: Tuple[str, str]
     ):
         """
         특정 요소를 찾습니다. 요소가 없으면 None을 반환하거나 예외를 발생시킵니다.
@@ -39,14 +40,14 @@ class BasePage:
         """
         try:
             element = self.find_element(locator)
-            if element:  
+            if element:
                 element.click()
                 logger.info(f"요소 클릭: {locator}")
             else:
                 if raise_exception:
                     raise TimeoutException(f"Timeout: {self.timeout}초 내에 요소를 찾거나 클릭할 수 없습니다: {locator}")
                 else:
-                    logger.warning(f"클릭할 요소를 찾지 못했습니다: {locator}") 
+                    logger.warning(f"클릭할 요소를 찾지 못했습니다: {locator}")
         except Exception as e:
             logger.error(f"예외 발생: {e}")
             raise
@@ -57,11 +58,11 @@ class BasePage:
         """
         try:
             element = self.find_element(locator)
-            if element:  
+            if element:
                 element.send_keys(text)
                 logger.info(f"텍스트 입력: {locator}, '{text}'")
             else:
-                logger.warning(f"텍스트 입력 요소를 찾지 못했습니다: {locator}") 
+                logger.warning(f"텍스트 입력 요소를 찾지 못했습니다: {locator}")
         except Exception as e:
             logger.error(f"예외 발생: {e}")
             raise

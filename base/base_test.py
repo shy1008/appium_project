@@ -6,6 +6,7 @@ import logging
 appium_server_url = "http://localhost:4723"
 logger = logging.getLogger(__name__)
 
+
 class BaseTest(unittest.TestCase):
     driver = None
 
@@ -24,7 +25,6 @@ class BaseTest(unittest.TestCase):
 
         cls.driver = webdriver.Remote(appium_server_url, options=options)
         logger.info(f"driver setUp")
-
 
     @classmethod
     def tearDownClass(cls):

@@ -1,8 +1,9 @@
-from selenium.common.exceptions import TimeoutException  
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 app_package = "com.musinsa.store"
+
 
 def restart_app(driver):
     """

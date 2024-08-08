@@ -10,7 +10,6 @@ from data.test_data import TestData
 from screens.my.my_page import MyPage
 from base.base_test import BaseTest
 from screens.login.login_page import LoginPage
-from selenium.webdriver.support.ui import WebDriverWait
 
 
 class TestScenario(BaseTest):

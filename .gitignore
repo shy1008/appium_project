@@ -163,3 +163,4 @@ cython_debug/
 
 data/test_data.py
 automation/allure-results/
+automation/allure-report/index.html

@@ -37,14 +37,15 @@
   |
 - common
   |-- utils
+  |-- locators
   |
 - data
   |-- test_data
   |
 - screens
   |- login
-  |  |-- login_page_locators
   |  |-- login_page
+  |
   |- my
   |  |-- my_page
   |
@@ -57,5 +58,7 @@
 
 - <a href="https://shy1008.tistory.com/72"> [트러블슈팅] Appium 프로젝트명 변경시, 독립된 가상환경 이슈</a>
 - <a href="https://shy1008.tistory.com/73"> [트러블슈팅] Appium 드라이버 초기화 이슈</a>
+- <a href="https://shy1008.tistory.com/74"> [Appium] 디렉토리 구조 개선과 시나리오간 의존성 이슈 고민</a>
+
 
 

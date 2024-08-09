@@ -24,11 +24,9 @@ class BaseTest(unittest.TestCase):
         options.no_reset = True
 
         cls.driver = webdriver.Remote(appium_server_url, options=options)
-        logger.info(f"driver setUp")
 
     @classmethod
     def tearDownClass(cls):
         """ 테스트 종료 후 Appium 세션을 종료하고 드라이버를 정리합니다."""
         if cls.driver:
-            logger.info(f"driver tearDown")
             cls.driver.quit()
